@@ -1,8 +1,10 @@
-const CounterReducers = (state=0,action) => {
+import { DECREMENT, INCREMENT } from "../actions/types";
+
+function CounterReducers(state=0,action){
     switch(action.type){
-        case 'Increment':
+        case INCREMENT:
             return state+1; 
-        case 'DECREMENT':
+        case DECREMENT:
             return state-1;
         default:
             return state;

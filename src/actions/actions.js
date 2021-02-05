@@ -1,11 +1,12 @@
-import {INCREMENT,DECREMENT} from './types'
-export const INCREMENT=()=>{
+import { DECREMENT, INCREMENT } from "./types"
+
+export const increment=()=>{
     return{
-        type:'INCREMENT'
+        type: INCREMENT
     }
 }
-export const DECREMENT=()=>{
+export const decrement=()=>{
     return{
-        type:'DECREMENT'
+        type: DECREMENT
     }
 }

@@ -1,4 +1,4 @@
-import { DECREMENT, INCREMENT } from "../actions/types";
+import { DECREMENT, INCREMENT, RESET } from "../actions/types";
 
 function CounterReducers(state=0,action){
     switch(action.type){
@@ -6,6 +6,8 @@ function CounterReducers(state=0,action){
             return state+1; 
         case DECREMENT:
             return state-1;
+        case RESET:
+            return state=0;
         default:
             return state;
     }
